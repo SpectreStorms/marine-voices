@@ -101,7 +101,7 @@ nav p:hover {
     color: blue;
 }
 
-article button {
+#unhidden {
     border-radius: 10px;
     font-family: 'Times New Roman', serif;
 }
