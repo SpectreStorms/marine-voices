@@ -14,10 +14,19 @@ body {
     margin-bottom: 3px;
 }
 
+/* Header */
+
 header {
     grid-row: 1;
     text-align: center;
     color: slateblue;
+    
+}
+
+header h1 {
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 50px;
 }
 
 /* Navigation */
@@ -50,12 +59,15 @@ nav a:hover {
 
 }
 
+/* Article */
 article {
     grid-row: 3 / end;
-    border: 1px solid black;
-    background-color: #fee7aa;
-    border-radius: 10px;
     color: slategrey;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100%;
+    gap: 1rem 1rem;
 }
 
 p {
@@ -63,56 +75,54 @@ p {
     text-align: center;
 }
 
-#sea-turtle {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 1px;
-    margin-top: 1px;
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:#fee7aa;
+
 }
 
-figure {
-    margin-top: 10px;
-    align-items: baseline;
-    margin-bottom: 1px;
+.card:hover {
+    border: 1px solid white;
+    background-color: navy;
+    color: cornsilk;
 }
 
-h1 {
-    margin: 1px;
-    font-size: 50px;
+/* About Card */
+#about {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+
 }
 
-article h3 {
+#about h4 {
     text-align: center;
-    margin-bottom: 1px;
-    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-article hr {
+#about hr {
     width: 60%;
-    margin-bottom: 1px;
 }
 
-h3 p {
-    margin-bottom: 1px;
-}
 
-nav p:hover {
-    color: blue;
-}
+/* Announcements Card */
 
-#unhidden {
-    border-radius: 10px;
-    font-family: 'Times New Roman', serif;
-}
-
-#recent-events {
+#announcements {
+    grid-row: 1;
+    grid-column: 2;
     margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-right: none;
+    width: 100%;
+
 }
 
-#recent-events-button {
+#announcements h4 {
     text-align: center;
-    margin-top: 1px;
+    margin-bottom: 10px;
 }
+
+#announcements hr {
+    width: 60%
+}
+
