@@ -127,6 +127,10 @@ aside button {
     background-color: lightgray;
 }
 
+#instagram {
+    border-radius: 50%;
+}
+
 #Flare {
     grid-column: 2;
     text-align: center;
@@ -145,7 +149,7 @@ aside button {
     
 }
 #flare {
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 
