@@ -11,7 +11,7 @@ body {
     font-size: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 3px;
+    padding-bottom: 20px;
 }
 
 /* Header */
@@ -54,8 +54,7 @@ nav a {
 
 nav a:hover {
     color: blue;
-    border: 1px solid black;
-    border-radius: 10px;
+    text-shadow: 2px 2px 8px rgb(131, 127, 127);
 
 }
 
@@ -64,8 +63,7 @@ article {
     grid-row: 3 / end;
     color: slategrey;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr;
     min-height: 100%;
     gap: 1rem 1rem;
 }
@@ -80,12 +78,13 @@ p {
     border-radius: 20px;
     background-color:#fee7aa;
 
+
 }
 
 .card:hover {
     border: 1px solid white;
-    background-color: navy;
     color: cornsilk;
+    background-image: linear-gradient(to bottom right, blue, lightblue);
 }
 
 /* About Card */
