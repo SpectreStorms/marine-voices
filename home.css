@@ -104,6 +104,12 @@ p {
     width: 60%;
 }
 
+#about img {
+    margin-left: 30%;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
 
 /* Announcements Card */
 
