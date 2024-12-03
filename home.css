@@ -92,6 +92,7 @@ p {
     grid-row: 1;
     grid-column: 1;
     width: 100%;
+    text-align: center;
 
 }
 
@@ -105,8 +106,6 @@ p {
 }
 
 #about img {
-    margin-left: 30%;
-    margin-right: auto;
     border-radius: 50%;
 }
 

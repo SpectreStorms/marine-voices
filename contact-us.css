@@ -121,6 +121,7 @@ aside button {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    min-width: 125px;
 
 }
 #Instagram {
@@ -133,6 +134,7 @@ aside button {
 
 #instagram {
     border-radius: 50%;
+    width: 100px;
 }
 
 #Flare {
@@ -145,6 +147,7 @@ aside button {
 }
 #flare {
     border-radius: 50%;
+    width: 100px;
 }
 
 
