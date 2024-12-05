@@ -1,7 +1,9 @@
 html {
     height: 100%;
     background-color: lightblue;
+
 }
+
 
 body {
     min-height: 100%;
@@ -53,10 +55,14 @@ nav a {
 }
 
 nav a:hover {
-    color: blue;
     text-shadow: 2px 2px 8px rgb(131, 127, 127);
+    color: blue;
+
+
 
 }
+
+
 
 /* Article */
 article {
@@ -83,8 +89,24 @@ p {
 
 .card:hover {
     border: 1px solid white;
+    animation-name: color-transition, text-color;
+    animation-duration: 2s;
     color: cornsilk;
-    background-image: linear-gradient(to bottom right, blue, lightblue);
+    background-color: blue;
+
+}
+
+
+
+@keyframes text-color {
+    0% {color: slategrey;}
+    100% {color: cornsilk;}
+}
+
+
+@keyframes color-transition {
+    0% {background-color: #fee7aa;}
+    100% {background-color: blue;}
 }
 
 /* About Card */
