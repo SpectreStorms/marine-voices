@@ -1,10 +1,18 @@
 html {
     height: 100%;
     background-color: lightblue;
+    animation-name: htmlBackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
 
 }
-
-
+@keyframes htmlBackground{
+    0% {background-color: lightblue;}
+    50% {background-color: rgb(188, 226, 226);}
+    100% {background-color: lightblue;}
+}
 body {
     min-height: 100%;
     display: grid;
@@ -40,7 +48,10 @@ nav {
     justify-content: space-evenly;
     border-radius: 10px;
     background-color: #fee7aa;
+
 }
+
+
 
 nav p {
     font-size: 2rem;
@@ -93,6 +104,7 @@ p {
     animation-duration: 2s;
     color: cornsilk;
     background-color: blue;
+    box-shadow: 3px 4px 5px 3px white;
 
 }
 
@@ -129,8 +141,15 @@ p {
 
 #about img {
     border-radius: 50%;
+    transition-property: rotate;
+    transition-duration: 1.5s;
+    transition-timing-function: linear;
+    z-index: 1;
 }
 
+#about img:hover {
+    rotate: 360deg;
+}
 
 /* Announcements Card */
 
