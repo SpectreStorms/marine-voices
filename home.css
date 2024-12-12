@@ -42,7 +42,7 @@ header h1 {
 /* Navigation */
 nav {
     grid-row: 2;
-    border: 1px solid black;
+    border: 3px solid white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -91,7 +91,7 @@ p {
 }
 
 .card {
-    border: 1px solid black;
+    border: 3px solid white;
     border-radius: 20px;
     background-color:#fee7aa;
 
@@ -140,6 +140,7 @@ p {
 }
 
 #about img {
+    width: 200px;
     border-radius: 50%;
     transition-property: rotate;
     transition-duration: 1.5s;
@@ -158,9 +159,17 @@ p {
     grid-column: 2;
     margin-left: auto;
     margin-right: none;
+    height: 50%;
     width: 100%;
+    transition-property: height;
+    transition-duration: 2s;
+}
+
+#announcements:hover{
+    height: 100%;
 
 }
+
 
 #announcements h4 {
     text-align: center;
@@ -171,3 +180,6 @@ p {
     width: 60%
 }
 
+#announcements p {
+    overflow: ellipse;
+}
