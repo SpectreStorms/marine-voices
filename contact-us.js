@@ -1,3 +1,3 @@
 function version() {
-    alert("Pre-release.");
+    alert("v0.1.2 Alpha");
 }
