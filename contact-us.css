@@ -1,8 +1,13 @@
 html {
     height: 100%;
     background-color: lightblue;
+    background-size: 100% 100%;
+    background-image: url(images/sjYntq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* Try out background-size: cover;*/
+
 body {
     display: grid;
     grid-template: 2.5rem 2.5rem 1fr / 15rem 1fr;
@@ -17,7 +22,7 @@ header {
     grid-row: 1;
     grid-column: 1/end;
     text-align: center;
-    color: slateblue;
+    color: white;
 }
 
 nav {
@@ -27,7 +32,6 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     border: 3px solid white;
-    background-color: #fee7aa;
     border-radius: 10px;
 }
 
@@ -36,8 +40,7 @@ aside {
     grid-column: 1;
     border: 3px solid white;
     border-radius: 10px;
-    background-color: #fee7aa;
-    color: slategrey;
+    color: white;
     text-align: center;
 }
 article {
@@ -46,7 +49,7 @@ article {
     display: grid;
     grid-template-rows: 1fr 5rem 1fr;
     gap: 1rem 1rem;
-    color: slategrey;
+    color: white;
 }
 
 
@@ -64,7 +67,7 @@ nav p {
 
 
 nav a {
-    color: slateblue;
+    color: white;
     text-decoration: none;
 }
 
@@ -106,13 +109,24 @@ aside button {
     font-family: 'Times New Roman', serif;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: lightgreen;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-weight: bold;
+
+}
+
+aside button:hover {
+    color: cornsilk;
+    border: 1px solid cornsilk;
 }
 /* Article */
-
+a {
+    color: white;
+}
 
 .card {
-    background-color: #fee7aa;
     border: 3px solid white;
     border-radius: 15px;
     width: 50%;

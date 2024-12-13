@@ -1,9 +1,14 @@
 html {
     height: 100%;
     background-color: lightblue;
+    background-image: url(images/sjYntq.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     animation-name: htmlBackground;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+
 
 
 
@@ -29,7 +34,7 @@ body {
 header {
     grid-row: 1;
     text-align: center;
-    color: slateblue;
+    color: white;;
     
 }
 
@@ -47,7 +52,8 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 10px;
-    background-color: #fee7aa;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px white;
 
 }
 
@@ -61,7 +67,7 @@ nav p {
 }
 
 nav a {
-    color: #5068c7;
+    color: white;
     text-decoration: none;
 }
 
@@ -76,9 +82,13 @@ nav a:hover {
 
 
 /* Article */
+.background-image {
+    /* Don't worry about this ;) */
+
+}
 article {
     grid-row: 3 / end;
-    color: slategrey;
+    color: white;
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     min-height: 100%;
@@ -93,33 +103,18 @@ p {
 .card {
     border: 3px solid white;
     border-radius: 20px;
-    background-color:#fee7aa;
+    background-color: transparent;
+    color: white;
 
 
-}
 
-.card:hover {
-    border: 1px solid white;
-    animation-name: color-transition, text-color;
-    animation-duration: 2s;
-    color: cornsilk;
-    background-color: blue;
-    box-shadow: 3px 4px 5px 3px white;
 
 }
 
 
 
-@keyframes text-color {
-    0% {color: slategrey;}
-    100% {color: cornsilk;}
-}
 
 
-@keyframes color-transition {
-    0% {background-color: #fee7aa;}
-    100% {background-color: blue;}
-}
 
 /* About Card */
 #about {

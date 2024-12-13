@@ -1,8 +1,11 @@
 html {
     height: 100%;
     background-color: lightblue;
-    background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-image: url(images/sjYntq.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -25,7 +28,7 @@ header h1 {
     margin-bottom: auto;
     margin-top: auto;
     font-size: 50px;
-    color: slateblue;
+    color: white;
 }
 
 /* Navigation */
@@ -36,12 +39,11 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 10px;
-    background-color: #fee7aa;
 }
 
 nav a {
     text-decoration: none;
-    color: slateblue;
+    color: white;
 }
 
 nav p {
@@ -59,7 +61,7 @@ nav a:hover {
 article {
     grid-row: 3;
     border-radius: 10px;
-    color: slategrey;
+    color: white;
     display: grid;
     grid-template: 4rem 3rem 20rem/ 1fr 1fr;
     min-height: 100%;
@@ -68,7 +70,6 @@ article {
 
 .card {
     border: 3px solid white;
-    background-color: #fee7aa;
     border-radius: 15px;
 }
 
