@@ -6,6 +6,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 }
 
 body {
@@ -42,6 +43,7 @@ aside {
     border-radius: 10px;
     color: white;
     text-align: center;
+    margin-bottom: 15px;
 }
 article {
     grid-column: 2/end;
@@ -173,3 +175,63 @@ article h3 {
     font-size: 25px;
 }
 
+@media screen and (max-width: 750px) {
+    html {
+        height: 101%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    p {
+        font-size: 15px;
+        
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    nav p {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    
+    aside {
+        height: 70%;
+        width: 75%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    article {
+        margin-right: 20px;
+        grid-template-rows: 1fr 1fr 5rem;
+
+    }
+
+
+    #Instagram {
+        margin-top: 1px;
+        margin-left: 0px;
+    ;
+    }
+
+    #Flare {
+        margin-top: 5px;
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 0px;
+    }
+
+
+    .card {
+        height: 90%;
+        width: 50%;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+}
