@@ -8,6 +8,7 @@ html {
     animation-name: htmlBackground;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    overflow-y: hidden;
 
 
 
@@ -93,6 +94,8 @@ article {
     grid-template: 1fr / 1fr 1fr;
     min-height: 100%;
     gap: 1rem 1rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 p {
@@ -135,7 +138,8 @@ p {
 }
 
 #about img {
-    width: 200px;
+    margin-top: 10%;
+    max-width: 25%;
     border-radius: 50%;
     transition-property: rotate;
     transition-duration: 1.5s;
@@ -177,4 +181,30 @@ p {
 
 #announcements p {
     overflow: ellipse;
+}
+@media screen and (max-width: 750px) {
+    html {
+        height: 101%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: 15px;
+        
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    nav p {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    
+    body {
+        padding-bottom: 0;
+    }
+
+
 }

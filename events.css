@@ -6,6 +6,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 
 }
 
@@ -153,4 +154,54 @@ article {
     border-radius: 15px;
     margin-left: 35%;
     margin-right: 35%;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        height: 101%;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        overflow-y: hidden;
+    }
+    li p {
+        font-size: 5px;
+        
+    }
+
+    #recent-events {
+        width: 80%;
+    }
+
+    #upcoming-events {
+        width: 80%;
+    }
+
+    #december-meeting {
+        overflow-y:scroll;
+        padding-bottom: none;
+        height: 50%;
+        width: 80%;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    nav p {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    
+    }
+    
+
+
+    .card a {
+        display: none;
+    }
+    
+    body {
+        padding-bottom: 0;
+    }
+
+
 }
